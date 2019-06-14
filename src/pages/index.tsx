@@ -6,7 +6,11 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
+// import { BlogIndexQuery } from '../graphqlTypes'
+
 interface IBlogIndexProps {
+  // uncomment this when type is generated
+  // data: BlogIndexQuery;
   data: any;
   location: Location;
 }
@@ -14,6 +18,13 @@ interface IBlogIndexProps {
 class BlogIndex extends React.Component<IBlogIndexProps> {
   render() {
     const { data, location } = this.props
+    if (
+      !data || 
+      !data.site || 
+      !data.site.siteMetadata ||
+      !data.site.siteMetadata.title || 
+      !data.allMarkdownRemark
+    ) throw new Error('no data')
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMarkdownRemark.edges
 
@@ -22,6 +33,13 @@ class BlogIndex extends React.Component<IBlogIndexProps> {
         <SEO title="All posts" />
         <Bio />
         {posts.map(({ node }) => {
+          if (
+            !node.frontmatter ||
+            !node.fields ||
+            !node.excerpt ||
+            !node.fields.slug ||
+            !node.frontmatter.description
+          ) throw new Error('missing data')
           const title = node.frontmatter.title || node.fields.slug
           return (
             <div key={node.fields.slug}>
@@ -51,7 +69,7 @@ class BlogIndex extends React.Component<IBlogIndexProps> {
 export default BlogIndex
 
 export const pageQuery = graphql`
-  query {
+  query BlogIndex {
     site {
       siteMetadata {
         title
