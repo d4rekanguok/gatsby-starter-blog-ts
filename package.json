@@ -8,6 +8,10 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
+    "@types/node": "^12.0.8",
+    "@types/react": "^16.8.19",
+    "@types/react-dom": "^16.8.4",
+    "@types/typography": "^0.16.2",
     "gatsby": "^2.9.2",
     "gatsby-image": "^2.1.4",
     "gatsby-plugin-feed": "^2.2.3",
@@ -32,6 +36,7 @@
     "react-typography": "^0.16.19",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.54",
+    "typescript": "^3.5.1",
     "typography": "^0.16.19",
     "typography-theme-wordpress-2016": "^0.16.19"
   },
