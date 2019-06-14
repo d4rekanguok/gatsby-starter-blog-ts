@@ -5018,16 +5018,17 @@ gatsby-plugin-sharp@^2.1.5:
     sharp "^0.22.1"
     svgo "^1.2.0"
 
-gatsby-plugin-ts@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-ts/-/gatsby-plugin-ts-1.0.0.tgz#274026d07cc9be558d49bc15e6327fa803be12b8"
-  integrity sha512-zxr/0K8pZxlcIBU6wTY9Ab70A+HOa01uTluCjKMbSYH8JO3m0mHCnIzCGdVX6W6Y1OLXX53lePADpQf4ecw+VA==
+gatsby-plugin-ts@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-ts/-/gatsby-plugin-ts-1.1.1.tgz#6d0d58abb9ff1183f258dbbedb62ddbb5822f642"
+  integrity sha512-VbSXAPxJaU97JHptw2qqDy2uvA3us3NXAXZueLqoB96lh4kfBCRmzZmGfzFtuIGoCaeknhzK5ZaPx/6lcKSlJA==
   dependencies:
     "@graphql-codegen/core" "^1.2.1"
     "@graphql-codegen/typescript" "^1.2.1"
     "@graphql-codegen/typescript-operations" "^1.2.1"
     fork-ts-checker-webpack-plugin "^1.3.6"
     graphql-toolkit "^0.2.14"
+    lodash.debounce "^4.0.8"
     ts-loader "^6.0.2"
 
 gatsby-plugin-typography@^2.2.13:
@@ -7307,6 +7308,11 @@ lodash.clonedeep@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.clonedeep/-/lodash.clonedeep-4.5.0.tgz#e23f3f9c4f8fbdde872529c1071857a086e5ccef"
   integrity sha1-4j8/nE+Pvd6HJSnBBxhXoIblzO8=
+
+lodash.debounce@^4.0.8:
+  version "4.0.8"
+  resolved "https://registry.yarnpkg.com/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
+  integrity sha1-gteb/zCmfEAF/9XiUVMArZyk168=
 
 lodash.escaperegexp@^4.1.2:
   version "4.1.2"
