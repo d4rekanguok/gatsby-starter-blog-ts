@@ -5,8 +5,12 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby's blog starter
+  Typescript blog starter
 </h1>
+
+Gatsby's blog starter, typescript-ifed with [`gatsby-plugin-ts`](https://github.com/d4rekanguok/gatsby-plugin-ts).
+
+---
 
 Kick off your project with this blog boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
