@@ -20,7 +20,7 @@
     "gatsby-plugin-offline": "^2.1.3",
     "gatsby-plugin-react-helmet": "^3.0.12",
     "gatsby-plugin-sharp": "^2.1.5",
-    "gatsby-plugin-ts": "file:.yalc/gatsby-plugin-ts",
+    "gatsby-plugin-ts": "^1.0.0",
     "gatsby-plugin-typography": "^2.2.13",
     "gatsby-remark-copy-linked-files": "^2.0.13",
     "gatsby-remark-images": "^3.0.14",
@@ -60,7 +60,6 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "generate": "graphql-codegen --config ./codegen-config.yml"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   }
 }

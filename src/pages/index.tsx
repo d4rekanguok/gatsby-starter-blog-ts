@@ -35,11 +35,11 @@ class BlogIndex extends React.Component<IBlogIndexProps> {
         {posts.map(({ node }) => {
           if (
             !node.frontmatter ||
-            !node.fields ||
             !node.excerpt ||
-            !node.fields.slug ||
-            !node.frontmatter.description
+            !node.fields ||
+            !node.fields.slug
           ) throw new Error('missing data')
+
           const title = node.frontmatter.title || node.fields.slug
           return (
             <div key={node.fields.slug}>
